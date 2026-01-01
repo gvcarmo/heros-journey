@@ -2,9 +2,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCarousel } from "../hooks/useCarousel";
 
 export const specialOffers = [
-    { name: 'Lisbon, Portugal', stars: '5', img: '/images/lisbon-portugal.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€500' },
-    { name: 'Athens, Greece', stars: '5', img: '/images/athens-greece.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€800' },
-    { name: 'Rome, Italy', stars: '5', img: '/images/rome-italy.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€750' },
+    { name: 'Lisbon, Portugal', stars: '5', img: './images/lisbon-portugal.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€500' },
+    { name: 'Athens, Greece', stars: '5', img: './images/athens-greece.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€800' },
+    { name: 'Rome, Italy', stars: '5', img: './images/rome-italy.png', description: '5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.', price: '€750' },
 ]
 
 interface SpecOffers {

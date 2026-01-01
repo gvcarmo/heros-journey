@@ -2,9 +2,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useCarousel } from "../hooks/useCarousel";
 
 export const travelerExp = [
-    { img: 'bg-[url(/images/avatar1.svg)]', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'John Doe', prof: 'Accountant' },
-    { img: 'bg-[url(/images/avatar2.svg)]', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'John Smith', prof: 'Journalist, HWO News' },
-    { img: 'bg-[url(/images/avatar3.svg)]', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'Tamara Bellis', prof: 'Managing Director, JTH' },
+    { img: './images/avatar1.svg', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'John Doe', prof: 'Accountant' },
+    { img: './images/avatar2.svg', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'John Smith', prof: 'Journalist, HWO News' },
+    { img: './images/avatar3.svg', description: 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.', stars: '5', name: 'Tamara Bellis', prof: 'Managing Director, JTH' },
 ]
 
 interface Travelers {
@@ -49,7 +49,7 @@ export const TravelerExperiences = ({ data }: { data: Travelers[] }) => {
                         <div key={index}
                             style={{ width: `calc(${100 / itemsVisible}% - ${(gap * (itemsVisible - 0.1)) / itemsVisible}px)` }}
                             className={`hover:brightness-125 transition-all duration-300 shrink-0 relative rounded-3xl overflow-hidden shadow-xl bg-neutral-very-dark-blue h-90.75 max-[800px]:h-120 max-[640px]:h-98.75 max-[530px]:h-100`}>
-                            <div className={`ml-7 h-25 w-25 max-[800px]:w-20 max-[800px]:h-20 rounded-full ${trav.img}`} aria-label={trav.name}></div>
+                            <div style={{ backgroundImage: `url(${trav.img})` }} className={`ml-7 h-25 w-25 max-[800px]:w-20 max-[800px]:h-20 rounded-full`} aria-label={trav.name}></div>
 
                             <div className="hover:scale-102 transition-all duration-300 absolute bottom-0 left-0 p-6 w-full text-white">
 

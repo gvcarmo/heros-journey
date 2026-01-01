@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 const homeBackgrounds = [
-    'bg-[url(/images/praia.jpg)]',
-    'bg-[url(/images/dubai.jpg)]',
-    'bg-[url(/images/italia.jpg)]',
-    'bg-[url(/images/toquio.jpg)]',
-    'bg-[url(/images/roma.jpg)]'
+    'bg-[url(./images/praia.jpg)]',
+    'bg-[url(./images/dubai.jpg)]',
+    'bg-[url(./images/italia.jpg)]',
+    'bg-[url(./images/toquio.jpg)]',
+    'bg-[url(./images/roma.jpg)]'
 ]
 
 const BackgroundCarousel = () => {

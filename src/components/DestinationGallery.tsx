@@ -1,10 +1,10 @@
 import { useCarousel } from "../hooks/useCarousel";
 
 export const galleryBackground = [
-    { img: '/images/gallery-01.svg' },
-    { img: '/images/gallery-02.svg' },
-    { img: '/images/gallery-03.svg' },
-    { img: '/images/gallery-04.svg' },
+    { img: './images/gallery-01.svg' },
+    { img: './images/gallery-02.svg' },
+    { img: './images/gallery-03.svg' },
+    { img: './images/gallery-04.svg' },
 ];
 
 interface Gallery {

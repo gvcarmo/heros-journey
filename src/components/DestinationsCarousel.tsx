@@ -2,14 +2,14 @@ import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
 import { useCarousel } from '../hooks/useCarousel';
 
 export const destineBackgrounds = [
-    { name: 'Monument of Berlin', img: '/images/monument-of-berlim.png', local: 'Berlin, Germany' },
-    { name: 'Millennium Bridge', img: '/images/millennium-bridge.png', local: 'London, United Kingdom' },
-    { name: 'Rialto Bridge', img: '/images/rialto-bridge.png', local: 'Venice, Italy' },
+    { name: 'Monument of Berlin', img: './images/monument-of-berlim.png', local: 'Berlin, Germany' },
+    { name: 'Millennium Bridge', img: './images/millennium-bridge.png', local: 'London, United Kingdom' },
+    { name: 'Rialto Bridge', img: './images/rialto-bridge.png', local: 'Venice, Italy' },
     { name: 'Sea of Orange Tiles', img: 'images/sea-of-orange-tails.png', local: 'Lisbon, Portugal' },
-    { name: 'Eiffel Tower', img: 'images/paris-france.png', local: 'Paris, France' },
+    { name: 'Eiffel Tower', img: './images/paris-france.png', local: 'Paris, France' },
     { name: 'Golden Gate Bridge', img: 'images/golden-gate-bridge.png', local: 'United States, San Francisco' },
-    { name: 'Pueblos Blancos', img: 'images/malaga-province.png', local: 'Province of Málaga, Spainish' },
-    { name: 'The Great Wall', img: '/images/great-wall.png', local: 'Huairou District, China' }
+    { name: 'Pueblos Blancos', img: './images/malaga-province.png', local: 'Province of Málaga, Spainish' },
+    { name: 'The Great Wall', img: './images/great-wall.png', local: 'Huairou District, China' }
 ];
 
 interface DestinationBackgrounds {

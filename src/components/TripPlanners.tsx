@@ -2,10 +2,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useCarousel } from '../hooks/useCarousel';
 
 export const tripPlannersBgs = [
-    { name: 'Lisbon, Portugal', img: 'bg-[url(/images/lisbon-portugal.png)]', local: 'London, United Kingdom', stars: '5', price: '€99 /Day', days: '7 Days tour' },
-    { name: 'Millennium Bridge', img: 'bg-[url(/images/millennium-bridge.png)]', local: 'London, United Kingdom', stars: '5', price: '€80 /Day', days: '7 Days tour' },
-    { name: 'Sea of Orange Tiles', img: 'bg-[url(/images/sea-of-orange-tails.png)]', local: 'Lisbon, Portugal', stars: '5', price: '€120 /Day', days: '7 Days tour' },
-    { name: 'The Great Wall', img: 'bg-[url(/images/great-wall.png)]', local: 'Huairou District, China', stars: '5', price: '€140 /Day', days: '7 Days tour' },
+    { name: 'Lisbon, Portugal', img: './images/lisbon-portugal.png', local: 'London, United Kingdom', stars: '5', price: '€99 /Day', days: '7 Days tour' },
+    { name: 'Millennium Bridge', img: './images/millennium-bridge.png', local: 'London, United Kingdom', stars: '5', price: '€80 /Day', days: '7 Days tour' },
+    { name: 'Sea of Orange Tiles', img: './images/sea-of-orange-tails.png', local: 'Lisbon, Portugal', stars: '5', price: '€120 /Day', days: '7 Days tour' },
+    { name: 'The Great Wall', img: './images/great-wall.png', local: 'Huairou District, China', stars: '5', price: '€140 /Day', days: '7 Days tour' },
 ];
 
 interface TripPlanners {
@@ -57,7 +57,8 @@ const TripPlanners = ({ data }: { data: TripPlanners[] }) => {
                             className="relative shrink-0 rounded-3xl overflow-hidden shadow-xl group bg-neutral-very-dark-blue cursor-pointer h-100"
                         >
                             <div
-                                className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:-translate-y-1/3 ${trip.img}`}
+                                style={{ backgroundImage: `url(${trip.img})` }}
+                                className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:-translate-y-1/3`}
                             >
                                 <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
                             </div>
